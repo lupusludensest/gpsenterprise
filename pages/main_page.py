@@ -12,7 +12,7 @@ class MainPage(Page):
 
     def click_on_log_in_btn_frst(self):
         """
-        Click on Log In button first
+        Click on Log In button first and go to the new url
         """
         self.click(*self.LOG_IN_BTN_1)
         window_before = self.driver.window_handles[0]
