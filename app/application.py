@@ -1,4 +1,5 @@
 from pages.main_page import MainPage
+from pages.cntct_frm_page import ContactFormPage
 
 class Application:
 
@@ -6,3 +7,4 @@ class Application:
         self.driver = driver
 
         self.main_page = MainPage(self.driver)
+        self.cntct_frm_page = ContactFormPage(self.driver)
