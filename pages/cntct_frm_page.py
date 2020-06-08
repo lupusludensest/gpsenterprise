@@ -28,10 +28,11 @@ class ContactFormPage(Page):
         User enters First name
         """
         sleep(4)
-        self.driver.switch_to.frame(self.driver.find_element_by_xpath("//iframe[@id='hs-form-iframe-0']"))
+        # self.driver.switch_to.frame(self.driver.find_element_by_xpath("//iframe[@id='hs-form-iframe-0']"))
+        self.driver.switch_to.frame(self.driver.find_element_by_css_selector("iframe#hs-form-iframe-0.hs-form-iframe"))
+        # self.driver.switch_to.frame(self.driver.find_element_by_id('hs-form-iframe-0'))
+        # self.driver.switch_to.frame(self.driver.find_element_by_class("hs-form-iframe"))
         self.input_text(text, *self.FRST_NM_FLD)
-        # self.driver.switch_to.frame(self.driver.find_element_by_css_selector("iframe#hs-form-iframe-0.hs-form-iframe")
-        # self.input_text(text, *self.FRST_NM_FLD)
         sleep(4)
 
     def inpt_scnd_nm(self, text):
