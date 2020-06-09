@@ -15,5 +15,5 @@ Feature: # contact_form
     Then User enters into the Message field Test for QA purposes
     Then User agrees with I agree to receive other communications from Analytic Partners
     Then User clicks on Submit button
-    Then Verify there is a text Thank you We will be in touch very soon!
+    Then Verify there is a text We will be in touch very soon! We appreciate your inquiry, and a member of our team will be in touch as soon as possible.
 
